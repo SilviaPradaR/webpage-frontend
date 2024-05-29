@@ -1,0 +1,283 @@
+/* Universal box-sizing and reset for all elements */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* Font styling for the entire body */
+body{
+    font-family: "Inter", sans-serif;
+}
+p{
+    margin-bottom: 0px;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.header__brand-name{
+    font-size: 48px;
+    font-weight: 700;
+}
+.header__nav-links{
+    font-size: 18px;
+    font-weight: 400;
+}
+.header__nav-links .nav-link:hover{
+    font-weight: 700;
+    color: #6c5ce7;
+}
+.header__auth-button{
+    background-color: #6c5ce7;
+    color: white;
+    border-radius: 999px;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px 32px;
+}
+.header__auth-button:hover{
+    background-color: #5e4ce7;
+    color: white;
+}
+/* Styling for bullet points */
+.bullet-color{
+    list-style: disc;
+}
+/* Styling for bullet marker color */
+.bullet-color::marker{
+    color: #FDCB6E;
+}
+main{
+    padding-top: 50px;
+}
+.about-us, .pricing-plans {
+    padding: 80px 40px;
+}
+.about-us__title{
+    font-size: 32px;
+    line-height: 48px;
+}
+.about-us__subtitle, .about-us__service-title{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+.about-us__service-title{
+    font-weight: 700;
+}
+.about-us__subtitle{
+    width: 85%;
+}
+.about-us__service-description{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+.about-us__service-card{
+    border: none;
+}
+.about-us__btn{
+    color: #6c5ce7;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 16px;
+    border: 1px solid #adadad;
+    width: 50%;
+}
+.about-us__icon-wrapper{
+    width: 70px;
+    height: 70px;
+}
+.about-us__btn:hover{
+    background-color: #8a7ee6;
+    color: white;
+}
+/* Background colors for different icons in About Us section */
+.bg-icon-phone{
+    background-color: #e84393;
+}
+.bg-icon-chart{
+    background-color: #0984e3;
+}
+.bg-icon-zap{
+    background-color: #6c5ce7;
+}
+.bg-icon-up{
+    background-color: #00b894;
+}
+/* Relative positioning for the pricing plans section */
+.pricing-plans{
+    position: relative;
+}
+.pricing-plans__title{
+    font-size: 64px;
+    font-weight: bold;
+}
+.pricing-plans__subtitle{
+    font-size: 32px;
+    color: #c2c2c2;
+    font-weight: bold;
+}
+/* Styling for highlighted text in pricing plans section */
+.pricing-plans__subtitle span{
+    color: #6c5ce7;
+}
+/* Styling for the highlight background in pricing plans section */
+.pricing-plans__text--highlight{
+    background-color: #fdcb6e;
+    border-radius: 20px;
+    height: 34%;
+    position: absolute;
+    top: 62%;
+    width: 100%;
+    z-index: -2;
+}
+/* Absolute positioning for the background image in pricing plans section */
+.pricing-plans__background-img{
+    position: absolute;
+    right: 52%;
+    top: 80%;
+}
+.pricing-plans__card {
+    border:none;
+    padding: 10px;
+}
+.pricing-plans__card .card-header{
+    color: #6c5ce7;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+}
+/* Styling for the best card in pricing plans section */
+.pricing-plans__card--best{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.pricing-plans__plan-best{
+    color: black;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    border: 1px solid #6c5ce7;
+    border-radius: 99px;
+}
+.pricing-plans__card .card-title{
+    font-weight: 700;
+    font-size: 48px;
+}
+.pricing-plans__card .card-title span{
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+}
+.pricing-plans__features .list-group-item{
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.pricing-plans__button{
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #adadad;
+    color: #6c5ce7;
+    border-radius: 16px;
+}
+.pricing-plans__button--best{
+    font-size: 24px;
+    background-color: #6c5ce7;
+    color: white;
+}
+.pricing-plans__button:hover{
+    color: white;
+    background-color: #6c5ce7;
+}
+/* Styling for icons in pricing plans section */
+.pricing-plans__icon{
+    min-width: 32px;
+    min-height: 32px;
+}
+.pricing-plans__icon--gray{
+    background-color: #c2c2c2;
+}
+.pricing-plans__icon--yellow{
+    background-color: #FDCB6E;
+}
+.pricing-plans__icon--blue{
+    background-color: #55EFC4;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1399px) {
+    .about-us__btn{
+        width: 80%;
+    }    
+}
+
+@media (max-width: 992px) {
+    .pricing-plans__card-container{
+        display: flex;
+        justify-content: center;
+    }
+    .pricing-plans__card{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+    .pricing-plans__card--best{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }    
+}
+
+@media (max-width: 768px) {
+    .about-us__subtitle{
+        width: 100%;
+    }
+    .pricing-plans__title{
+        font-size: 36px;
+    }
+    .pricing-plans__subtitle{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header__brand-name{
+        font-size: 24px;
+    }
+    .header__auth-button{
+        font-size: 18px;
+        padding: 4px 16px;
+    }
+    .about-us__title {
+        font-size: 24px;
+    }
+    .about-us__subtitle {
+        font-size: 18px;        
+    }
+    .about-us__service-title{
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .about-us__service-description, .about-us__btn{
+        font-size: 13.5px;
+        line-height: 24px;
+    }
+    .pricing-plans__title{
+        font-size: 32px;
+    }    
+    .pricing-plans__subtitle{
+        font-size: 24px;
+    }    
+    .pricing-plans__card .card-header{
+        font-size: 18px;
+    }
+    .pricing-plans__plan-best{
+        font-size: 12px;
+    }
+    .pricing-plans__card .card-title{
+        font-size: 24px;
+    }
+    .pricing-plans__features .list-group-item{
+        font-size: 14px;
+    }
+}
